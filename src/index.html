@@ -37,36 +37,36 @@
         <input type="submit" value="Обо мне">
         <input type="submit" value="Мои работы">
     </div>
-    
+    </div>
     
    
     <div class="about_me">
         <div class="About_info"><h2>Обо мне</h2></div>
         
-        <div class ="picture-block"></div>
-        
-        
+
         <div class="About_text"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque perspiciatis fugiat incidunt tempora cum vero nulla voluptate repellendus maxime. Eius!</p>
+        <br>
+        <br>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque perspiciatis fugiat incidunt tempora cum vero nulla voluptate repellendus maxime. Eius!</p></div>
+        <input class="Download_resume" type="submit" value="Скачать резюме">
         
-         <input type="submit" value="Скачать резюме">
     </div>
     
     <div class="What_can_I_do">
-       <h2>Что я умею</h2>
+       <h2 class="What_can_i_do_title">Что я умею</h2>
         <div class="Menu_possibilites">
             <ul>
-                <li><p>Веб-дизайн</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis asperiores velit officia non nisi minus veritatis. Iure eum cumque perspiciatis.</p></li>
+                <li><p class="titleP1">Веб-дизайн</p>
+                <p class="text_can_i_do">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis asperiores velit officia non nisi minus veritatis. Iure eum cumque perspiciatis.</p></li>
                 
-                <li><p>Разработка</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis asperiores velit officia non nisi minus veritatis. Iure eum cumque perspiciatis.</p></li>
+                <li><p class="titleP2">Разработка</p>
+                <p class="text_can_i_do">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis asperiores velit officia non nisi minus veritatis. Iure eum cumque perspiciatis.</p></li>
                 
-                <li><p>СЕО-Оптимизация</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis asperiores velit officia non nisi minus veritatis. Iure eum cumque perspiciatis.</p></li>
+                <li><p class="titleP3">СЕО-Оптимизация</p>
+                <p class="text_can_i_do">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis asperiores velit officia non nisi minus veritatis. Iure eum cumque perspiciatis.</p></li>
                 
-                <li><p>Маркетинг</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis asperiores velit officia non nisi minus veritatis. Iure eum cumque perspiciatis.</p></li>
+                <li><p class="titleP4">Маркетинг</p>
+                <p class="text_can_i_do">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis asperiores velit officia non nisi minus veritatis. Iure eum cumque perspiciatis.</p></li>
                 
                 </ul>
         </div>
@@ -76,7 +76,7 @@
        <div class="Cases_info"><h2>Кейсы</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error facere nobis corporis animi minus, enim nemo reprehenderit dolorem at voluptatem!</p>
         
-        <img src="" alt="it used to be picture of case but smth go wrong"></div>
+       </div>
         
         
         <div class="About_project">
@@ -85,40 +85,54 @@
                 <p>Какая-то компания</p>
                 <h4>Website:</h4>
                 <p>http://www.somedomain.com</p>
-                <input type="submit" value="Visit Live site">
+                <input class="submitSite" type="submit" value="Visit Live site">
             </div>
             <div class="project_info">
                 <h4>Название проекта</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo saepe, ea eos, dolorem praesentium doloribus sed cumque aliquid quisquam totam blanditiis, eveniet quibusdam nobis. Natus commodi hic voluptatum aliquid alias!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, expedita, quam aperiam facere praesentium autem nam, nesciunt, voluptates nisi debitis ut accusamus dolor harum cumque molestiae tenetur modi beatae excepturi. Deleniti similique, veritatis nemo quo dolore amet nam distinctio eveniet.</p>
             </div>
         </div>
     </div>
     
     <div class="Value_count">
         <form action="#">
-        <h2>Расчет стоимости</h2>
+        <h2 class="TitleCount">Расчет стоимости</h2>
         
-        <h2>Тип сайта</h2>
-        <select name="Typelist" id="Typelist" >
+        
+        
+            <h2 class="Count">Тип сайта</h2>
+        <select class="select" name="Typelist" id="Typelist" >
+               <option value="" selected>Выберете пункт...</option>
                 <option value="Opti1">SiteType1</option>
                 <option value="Opti2">SiteType2</option>
                 <option value="Opti3">SiteType3</option>
                 <option value="Opti4">SiteType4</option>
             </select>
-        <h2>Дизайн</h2>
-        <select name="Designlist" id="Designlist">
+        <h2 class="Count">Дизайн</h2>
+        <select class="select" name="Designlist" id="Designlist">
+               <option value="" selected>Выберете пункт...</option>
                 <option value="Opti1">DesignType1</option>
                 <option value="Opti2">DesignType2</option>
             </select>
-        <h2>Адаптивность</h2>
-        <select name="Adaptlist" id="Adaptlist">
+        <h2 class="Count">Адаптивность</h2>
+        <select class="select" name="Adaptlist" id="Adaptlist">
+               <option value="" selected>Выберете пункт...</option>
                 <option value="Opti1">AdaptType1</option>
                 <option value="Opti2">AdaptType2</option>
                 <option value="Opti3">AdaptType3</option>
 
             </select>
-        <p>Сроки</p>
-        <p>Стоимость</p>
+        
+        
+            <div class="out_value">
+                <span>Сроки</span>
+                <span class="result_of_count">0</span>
+                <br>
+                <br>
+                <span>Стоимость</span>
+                <span class="result_of_count">0</span>
+            </div>
+        
             
         </form>
         
@@ -128,17 +142,17 @@
         <div class="Statistics_Info"><h2>Немного статистики</h2></div>
         <div class="Statistics">
             <ul>
-                <li><p>120</p>
-                <p>Счастливых клиентов.</p></li>
+                <li><p class="TitleTablet1">120</p>
+                <p class="some_text">Счастливых клиентов</p></li>
                 
-                <li><p>4,600</p>
-                <p>Часов работы</p></li>
+                <li><p class="TitleTablet2">4,600</p>
+                <p class="some_text">Часов работы</p></li>
                 
-                <li><p>340</p>
-                <p>Заказов завершено</p></li>
+                <li><p class="TitleTablet3">340</p>
+                <p class="some_text">Заказов завершено</p></li>
                 
-                <li><p>23</p>
-                <p>Наград получено</p></li>
+                <li><p class="TitleTablet4">23</p>
+                <p class="some_text">Наград получено</p></li>
                 
                 </ul>
             
@@ -147,13 +161,13 @@
     
     <div class="reviews">
        <div class="Revievs_Info"><h2>Отзывы</h2></div>
-       <img src="" alt="it used to be picture of my client but smth go wrong">
+       
        <div class="reviev">
            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus unde voluptatem deserunt, vero tenetur eligendi dolores rerum voluptates atque! Voluptas.</p>
-           
-           <p>Михаил, директор ПАО "Газпром".</p>
+           <br>
+           <p><b>Михаил</b>, Ген директор ПАО "Газпром".</p>
        </div>
-       
+       <div class="scroll"></div>
         
     </div>
     
@@ -164,12 +178,12 @@
         </div>
         <div class="Contacts">
             <ul>
-                <li><p>Санкт-Петербург</p>
+                <li class="contacts_title1"><p>Санкт-Петербург</p>
                 <p>Невский проспект 11</p></li>
                 
-                <li><p>info@companyname.com</p></li>
+                <li class="contacts_title2"><p>info@companyname.com</p></li>
                 
-                <li><p>+ 7 999 999-99-99</p>
+                <li class="contacts_title3"><p>+ 7 999 999-99-99</p>
                 </li>
 
                 </ul>
@@ -178,22 +192,27 @@
             
         <form action="#">
         <h2>Оставьте мне сообщение</h2>
-        <input type="text" name="name_input" value="" placeholder="Имя">
-        <input type="text" name="mail_input" value="" placeholder="Email">
-        <textarea name="message" id="1" cols="30" rows="10" placeholder="Сообщение">
+        
+        <div class="send_message">
+            
+        <input class="name" type="text" name="name_input" value="" placeholder="Имя">
+        <input class="email"type="text" name="mail_input" value="" placeholder="Email">
+        <textarea class="textarea" name="message" id="1" cols="30" rows="10" placeholder="Сообщение">
             
         </textarea>
-        <input type="submit" value="Отправить">
+        </div>
+        
+        <input class="Send_message" type="submit" value="Отправить">
         </form>
         </div>
         
         <div class="social_networks"><ul>
-            <li>facebook</li>
-            <li>twitter</li>
-            <li>network</li>
-            <li>github</li>
-            <li>instagram</li>
-            <li>linkedIn</li>
+            <li>url</li>
+            <li>url</li>
+            <li>url</li>
+            <li>url</li>
+            <li>url</li>
+            <li>url</li>
         </ul></div>
     </div>
     
@@ -205,6 +224,6 @@
 
         <p>Copyright© 2022 Александр Мирко. Design by Web</p>
     </div>  
-    </div>
+    
 </body>
 </html>
