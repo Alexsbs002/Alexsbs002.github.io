@@ -14,8 +14,26 @@
     <title>Мирко Александр - Веб-разработчик</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+    <script>
+  $(window).on('load', function () {
+    $preloader = $('.loaderArea'),
+      $loader = $preloader.find('.loader');
+    $loader.fadeOut();
+    $preloader.delay(350).fadeOut('slow');
+  });
+</script>
 </head>
 <body>
+
+<div class="loaderArea">
+   <div class="loader"></div>
+</div>
+
+
+   
+   
+
     <header>
         <nav>
             <div class="logo">Александр Мирко</div>
@@ -159,6 +177,7 @@
         </div>
     </div>
     
+    
     <div class="reviews">
        <div class="Revievs_Info"><h2>Отзывы</h2></div>
        
@@ -167,7 +186,12 @@
            <br>
            <p><b>Михаил</b>, Ген директор ПАО "Газпром".</p>
        </div>
-       <div class="scroll"></div>
+       <div class="scroll">
+           <div tabindex="0", class="scroll1"><input type="submit" value=""></div>
+           <div tabindex="0", class="scroll2"><input type="submit" value=""></div>
+           <div tabindex="0", class="scroll3"><input type="submit" value=""></div>
+       </div>
+       
         
     </div>
     

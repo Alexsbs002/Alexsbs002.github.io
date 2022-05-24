@@ -1,3 +1,75 @@
+.loaderArea {
+  background: linear-gradient(90deg, #FF4E50 10%, #F9D423 90%);
+  overflow: hidden;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right:0;
+  bottom:0;
+  z-index: 100000;
+}
+.loader {
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  left: 50%;
+  margin-left: -20px;
+  top: 50%;
+  margin-top: -20px;
+}
+ 
+.loader:before,
+.loader:after {
+  content: "";
+  height: 40px;
+  width: 40px;
+  border: 8px solid rgba(255,255,255,.5);
+  border-radius: 10px;
+  position: absolute;
+  top: 0;
+}
+ 
+.loader:before {
+  animation: animate 2s infinite linear;
+}
+ 
+@keyframes animate {
+  0% {
+    transform: rotate(0) skew(0);
+  }
+   
+  100% {
+    transform: rotate(180deg) skew(360deg);
+  }
+}
+ 
+ 
+.loader:after {
+  animation: animate2 2s infinite linear;
+}
+ 
+@keyframes animate2 {
+  0% {
+    transform: rotate(0) skew(0);
+  }
+   
+  100% {
+    transform: rotate(-180deg) skew(-360deg);
+  }
+}
+
+<script>
+  $(window).on('load', function () {
+    $preloader = $('.loaderArea'),
+      $loader = $preloader.find('.loader');
+    $loader.fadeOut();
+    $preloader.delay(350).fadeOut('slow');
+  });
+</script>
+
+
+
+
 body{
     font-family: Arial, sans-serif;
 }
@@ -166,6 +238,21 @@ a, a:visited{text-decoration: none; color: white;}
     background: url(../img/%D0%B8%D0%BA%D0%BE%D0%BD%D0%BA%D0%B0.png) no-repeat 5% 50%/auto 60%;
     margin-top: 42px;
 }
+.Download_resume{
+    transition: all 0.2s;
+    transform:scale(1);
+}
+
+.Download_resume:hover{
+    background: #2a3e50;
+    font-size: 18px;
+    padding-left: 6px;
+    color:white;
+}
+.Download_resume:active{
+    transform: scale(1.1);
+}
+
 .What_can_I_do{
     
     width:100%;
@@ -190,6 +277,7 @@ a, a:visited{text-decoration: none; color: white;}
     padding-left: 420px;
 }
 
+
 .Menu_possibilites li{
     width:215px;
     height: 255px;
@@ -200,6 +288,11 @@ a, a:visited{text-decoration: none; color: white;}
     margin-right: 79px;
     font-size: 16px;
     text-transform: uppercase;
+}
+
+.Menu_possibilites li:hover{
+    transition: all 0.2s;
+    transform: scale(1.1);
 }
 .titleP1{
     border:none;
@@ -268,6 +361,8 @@ a, a:visited{text-decoration: none; color: white;}
     background: url(../img/%D1%84%D0%BE%D1%82%D0%BA%D0%B0_%D1%84%D0%BE%D0%BD_%D0%BA%D0%B5%D0%B9%D1%81.png) no-repeat 23% 60%/auto 60%;
     
 }
+
+
 .Cases_info h2{
     margin: 107px 0px 0px 875px ;
     width: 182px;
@@ -277,6 +372,7 @@ a, a:visited{text-decoration: none; color: white;}
     text-align: center;
     border-bottom: 4px solid #eb7800;
 
+    
 }
 .Cases_info p{
     font-size: 20px;
@@ -317,6 +413,20 @@ a, a:visited{text-decoration: none; color: white;}
     font-size: 15px;
     font-weight: bold;
 }
+
+.submitSite{
+    transition: all 0.2s;
+    transform:scale(1);
+}
+
+.submitSite:hover{
+    background: #2a3e50;
+    color:white;
+}
+.submitSite:active{
+    transform: scale(1.1);
+}
+
 .project_info{
     border: none;
     color: #606a77;
@@ -397,7 +507,9 @@ a, a:visited{text-decoration: none; color: white;}
     float:left;
     color: #213549;
     text-align: center;
+    
     background: url(../img/%D1%84%D0%BE%D0%BD_%D1%81%D1%82%D0%B0%D1%82%D0%B8%D1%81%D1%82%D0%B8%D0%BA%D0%B0.png)no-repeat center/cover;
+    background-attachment: fixed;
 }
 .Statistics_Info{
     margin: 120px 0px 0px 770px ;
@@ -408,6 +520,7 @@ a, a:visited{text-decoration: none; color: white;}
     color: #213549;
     text-align: center;
     border-bottom: 4px solid #eb7800;
+    
 }
 .Statistics li{
     
@@ -420,6 +533,7 @@ a, a:visited{text-decoration: none; color: white;}
     margin-left: 220px;
     font-size: 16px;
     text-transform: uppercase;
+    
 }
 .TitleTablet1{
     border:none;
@@ -479,6 +593,7 @@ a, a:visited{text-decoration: none; color: white;}
     font-weight: bold;
 }
 .reviews{
+    margin-left: auto;
     float: left;
     border: none;
     height: 595px;
@@ -507,15 +622,38 @@ a, a:visited{text-decoration: none; color: white;}
     margin-top: 250px;
     
 }
-.scroll{
-    margin: 30px 0px 0px 900px;
+.scroll [class^='scroll']:focus{
+    
+    background: url(../img/%D0%9E%D1%80%D0%B0%D0%BD%D0%B6.png) no-repeat 10% 100%/auto 80%;
+}
+.scroll1{
+    float: left;
+    margin: 30px 0px 0px 49%;
     border: none;
-    width: 80px;
+    width: 20px;
     height: 20px;
-    background: url(../img/%D0%9E%D1%80%D0%B0%D0%BD%D0%B6.png) no-repeat 10% 100%/auto 55% ,url(../img/Оранж_копия.png) no-repeat 50% 100%/auto 55%, url(../img/Оранж_копия2.png) no-repeat 90% 100%/auto 55%;
+    background: url(../img/Оранж_копия.png) no-repeat 10% 100%/auto 80%;
     
 }
 
+.scroll2{
+    float: left;
+    margin: 30px 0px 0px 0px;
+    border: none;
+    width: 20px;
+    height: 20px;
+    background: url(../img/Оранж_копия.png) no-repeat 50% 100%/auto 80%;
+    
+}
+.scroll3{
+    float: left;
+    margin: 30px 0px 0px 0px;
+    border: none;
+    width: 20px;
+    height: 20px;
+    background: url(../img/Оранж_копия2.png) no-repeat 90% 100%/auto 80%;
+    
+}
 .My_contacts{
     height: 805px;
     width:100%;
